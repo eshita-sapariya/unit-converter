@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="unitConverter.css" />
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <h2 id="title">Unit Converter</h2>
+    <div class="dropdown-container">
+      <select id="select-options">
+        <option value="select-units">--Select Unit--</option>
+        <option value="length">Length</option>
+        <option value="temperature">Temperature</option>
+        <option value="mass">Mass</option>
+      </select>
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+    <!-- For length  -->
+    <div class="lContainer container hidden">
+      <p class="unit-text">Length Converter</p>
+      <div class="input-container">
+        <label for="feet">Feet</label>
+        <input
+          type="number"
+          name=""
+          id="feet"
+          onInput="convertToOthers('feet',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="inch">Inch</label>
+        <input
+          type="number"
+          name=""
+          id="inch"
+          onInput="convertToOthers('inch',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="metre">Metre</label>
+        <input
+          type="number"
+          name=""
+          id="metre"
+          onInput="convertToOthers('metre',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="centimeter">Centimeter</label>
+        <input
+          type="number"
+          name=""
+          id="centimeter"
+          onInput="convertToOthers('centimeter',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="kilometer">Kilometer</label>
+        <input
+          type="number"
+          name=""
+          id="kilometer"
+          onInput="convertToOthers('kilometer',this.value)"
+        />
+      </div>
+    </div>
+    <!-- For mass -->
+    <div class="mContainer container hidden">
+      <p class="unit-text">Mass Converter</p>
+      <div class="input-container">
+        <label for="kilogram">Kilogram</label>
+        <input
+          type="number"
+          name=""
+          id="kilogram"
+          onInput="convertToOthers('kilogram',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="gram">Gram</label>
+        <input
+          type="number"
+          name=""
+          id="gram"
+          onInput="convertToOthers('gram',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="milligram">Milligram</label>
+        <input
+          type="number"
+          name=""
+          id="milligram"
+          onInput="convertToOthers('milligram',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="pound">Pound</label>
+        <input
+          type="number"
+          name=""
+          id="pound"
+          onInput="convertToOthers('pound',this.value)"
+        />
+      </div>
+    </div>
+    <!-- For Temperature  -->
+    <div class="tContainer container hidden">
+      <p class="unit-text">Temperature Converter</p>
+      <div class="input-container">
+        <label for="degreeCelcius">Degree Celcius</label>
+        <input
+          type="number"
+          name=""
+          id="degreeCelcius"
+          onInput="convertToOthers('degreeCelcius',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="fahrenheit">Fahrenheit</label>
+        <input
+          type="number"
+          name=""
+          id="fahrenheit"
+          onInput="convertToOthers('fahrenheit',this.value)"
+        />
+      </div>
+      <div class="input-container">
+        <label for="kelvin">Kelvin</label>
+        <input
+          type="number"
+          name=""
+          id="kelvin"
+          onInput="convertToOthers('kelvin',this.value)"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="unitConverter.js"></script>
+</html>
